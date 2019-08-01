@@ -20,7 +20,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/klombomb/browser-demo
+git clone https://github.com/wangshujingscan/browser-demo
 # Go into the repository
 cd electron-quick-start
 # Install dependencies
