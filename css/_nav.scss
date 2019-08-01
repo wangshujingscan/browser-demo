@@ -7,7 +7,7 @@ body {
 {
     float: left;
     display: block;
-    width: $buttons_Width / 6;
+    width: $buttons_Width / 7;
     font-size: 20px;
     color: $white;
     i 
@@ -36,6 +36,9 @@ body {
     }
     #refresh
     {
+        @extend .common-buttons;
+    }
+    #shopping {
         @extend .common-buttons;
     }
     #fave {

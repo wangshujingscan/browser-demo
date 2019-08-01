@@ -15,6 +15,7 @@ var back = ById('back'),
     refresh = ById('refresh'),
     omni = ById('url'),
     dev = ById('console'),
+    shopping = ById('shopping'),
     fave = ById('fave'),
     list = ById('list'),
     popup = ById('fave-popup'),
@@ -65,6 +66,9 @@ Bookmark.prototype.ELEMENT = function () {
     favimage.className = 'favicon';
     a_tag.insertBefore(favimage, a_tag.childNodes[0]);
     return a_tag;
+}
+function shoppingView () {
+    alert("shoppingView!!");
 }
 function addBookmark () {
     let url = view.src;
@@ -129,6 +133,7 @@ refresh.addEventListener('click', reloadView);
 back.addEventListener('click', backView);
 forward.addEventListener('click', forwardView);
 omni.addEventListener('keydown', updateURL);
+shopping.addEventListener('click', shoppingView);
 fave.addEventListener('click', addBookmark);
 list.addEventListener('click', openPopUp);
 popup.addEventListener('click', handleUrl);
