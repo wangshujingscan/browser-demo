@@ -57,15 +57,27 @@ body {
   display: block;
 }
 
-.common-buttons, #navigation #back, #navigation #forward, #navigation #refresh, #navigation #shopping, #navigation #fave, #navigation #list, #navigation #console {
+.common-buttons, #navigation #back, #navigation #forward, #navigation #refresh {
   float: left;
   display: block;
-  width: 25.71429px;
+  width: 28.88889px;
   font-size: 20px;
   color: #EEEEEE;
 }
 
-.common-buttons i, #navigation #back i, #navigation #forward i, #navigation #refresh i, #navigation #shopping i, #navigation #fave i, #navigation #list i, #navigation #console i {
+.common-buttons i, #navigation #back i, #navigation #forward i, #navigation #refresh i {
+  cursor: pointer;
+}
+
+.common-buttons-right, #navigation #user, #navigation #shopping, #navigation #fave, #navigation #list, #navigation #console {
+  float: right;
+  display: block;
+  width: 28.88889px;
+  font-size: 20px;
+  color: #EEEEEE;
+}
+
+.common-buttons-right i, #navigation #user i, #navigation #shopping i, #navigation #fave i, #navigation #list i, #navigation #console i {
   cursor: pointer;
 }
 
@@ -84,7 +96,7 @@ body {
 #navigation #omnibox {
   float: left;
   display: block;
-  width: calc(100% - 180px);
+  width: calc(100% - 260px);
   color: #333333;
 }
 
@@ -92,12 +104,21 @@ body {
   border: none;
   outline: none;
   height: 18px;
-  width: 90%;
+  width: 100%;
   border-radius: 2px;
   padding-left: 1px;
   color: #333333;
   font-family: monospace;
   margin-top: -1px;
+}
+
+#navigation .vertical {
+  float: right;
+  margin-top: 2px;
+  width: 1px;
+  height: 18px;
+  margin-right: 10px;
+  background: darkgray;
 }
 
 #navigation #fave-popup {

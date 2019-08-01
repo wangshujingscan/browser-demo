@@ -18,6 +18,7 @@ var back = ById('back'),
     shopping = ById('shopping'),
     fave = ById('fave'),
     list = ById('list'),
+    user = ById('user'),
     popup = ById('fave-popup'),
     view = ById('view');
 
@@ -125,6 +126,10 @@ function handleDevtools () {
     }
 }
 
+function userView () {
+    alert('userView!!');
+}
+
 function updateNav (event) {
     omni.value = view.src;
 }
@@ -138,6 +143,7 @@ fave.addEventListener('click', addBookmark);
 list.addEventListener('click', openPopUp);
 popup.addEventListener('click', handleUrl);
 dev.addEventListener('click', handleDevtools);
+user.addEventListener('click', userView)
 view.addEventListener('did-finish-load', updateNav);
 // https://github.com/hokein/electron-sample-apps/blob/master/webview/browser/browser.js#L5
 // To Do add dev tools open ✔️

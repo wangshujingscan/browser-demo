@@ -1,4 +1,4 @@
-$buttons_Width: 180px;
+$buttons_Width: 260px;
 body {
     height: 100%;
     display: block;
@@ -7,7 +7,7 @@ body {
 {
     float: left;
     display: block;
-    width: $buttons_Width / 7;
+    width: $buttons_Width / 9;
     font-size: 20px;
     color: $white;
     i 
@@ -15,6 +15,19 @@ body {
         cursor: pointer;
     }
 }
+.common-buttons-right
+{
+    float: right;
+    display: block;
+    width: $buttons_Width / 9;
+    font-size: 20px;
+    color: $white;
+    i 
+    {
+        cursor: pointer;
+    }  
+}
+
 #navigation 
 {
     width: 100%;
@@ -38,15 +51,6 @@ body {
     {
         @extend .common-buttons;
     }
-    #shopping {
-        @extend .common-buttons;
-    }
-    #fave {
-        @extend .common-buttons;
-    }
-    #list {
-        @extend .common-buttons;
-    }
     #omnibox
     {
         float: left;
@@ -58,7 +62,7 @@ body {
             border: none;
             outline: none;
             height: 18px;
-            width: 90%;
+            width: 100%;
             border-radius: 2px;
             padding-left: 1px;
             color: $black;
@@ -66,9 +70,31 @@ body {
             margin-top: -1px;
         }
     }
+    #user
+    {
+        @extend .common-buttons-right;
+    }
+    .vertical
+    {
+        float: right;
+        margin-top: 2px;
+        width: 1px;
+        height: 18px;
+        margin-right: 10px;
+        background: darkgray;
+    }
+    #shopping {
+        @extend .common-buttons-right;
+    }
+    #fave {
+        @extend .common-buttons-right;
+    }
+    #list {
+        @extend .common-buttons-right;
+    }
     #console
     {
-        @extend .common-buttons;
+        @extend .common-buttons-right;
     }
     #fave-popup
     {
