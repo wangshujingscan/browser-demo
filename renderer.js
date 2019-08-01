@@ -127,12 +127,28 @@ function handleDevtools () {
 }
 
 function userView () {
-    alert('userView!!');
+    promptDialog("用户信息:", function(x) {
+        if(x != '')
+            alert(x)
+    })
 }
 
 function updateNav (event) {
     omni.value = view.src;
 }
+
+function promptDialog(question, cb) {
+    var pDialog = document.getElementById('pDialog')
+  
+    var fe = function(e) {
+      cb(pDialog.returnValue)
+      pDialog.removeEventListener("close", fe)
+    }  
+  
+    document.getElementById("pLabel").innerHTML = question  
+    var x = pDialog.showModal()
+    pDialog.addEventListener('close', fe)
+  }
 
 refresh.addEventListener('click', reloadView);
 back.addEventListener('click', backView);
