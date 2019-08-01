@@ -22,11 +22,14 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 # Clone this repository
 git clone https://github.com/wangshujingscan/browser-demo
 # Go into the repository
-cd electron-quick-start
+cd browser-demo
 # Install dependencies
 npm install
 # Run the app
 npm start
+# Run pacakge the app
+npm run package
+
 ```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.

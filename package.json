@@ -1,10 +1,11 @@
 {
-  "name": "electron-quick-start",
+  "name": "Makemoney",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . Makemoney --win --out app --arch=x64 --electron-version 1.8.8 --overwrite"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
